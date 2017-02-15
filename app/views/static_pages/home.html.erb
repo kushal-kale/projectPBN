@@ -1,0 +1,188 @@
+<% provide(:title, "Home ") %><br>
+<div class="center jumbotron text-center">
+  <form role = "form" enctype="multipart/form-data" action="<%= static_pages_home_path %>" method="POST">
+	   <input name="utf8" type="hidden" value="&#x2713;" />
+  <input name="authenticity_token" type="hidden"
+         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+    <div class="form-group text-center"><br>
+      <label for="DomainName" class="zero">Domain Names</label>
+		<textarea id="DomainName" name="DomainName" class="form-control zero" placeholder="Enter line separated domains"></textarea>
+    </div>
+	  <!--
+    <button id="btn1" type="button" class="btn btn-success zero">Next</button><hr />
+	<div class="form-group text-center">
+	  <label for="uniqueIP" class="one">Does your domain have a unique IP?</label>
+	  <div class="leftal">
+		<label class="radio-inline one">
+        <input type="radio" name="optradio1" class="one" value="Yes">Yes
+        </label>
+        <label class="radio-inline one">
+          <input type="radio" name="optradio1" class="one" value="No">No
+        </label>
+	  </div>
+	</div>
+	<button id="btn2" type="button" class="btn btn-success one">Next</button>
+	<div class="form-group text-center">
+	  <label for="uniqueTheme" class="two">Does your blog have a unique Theme?</label>
+		<div class="leftal">
+	  <label class="radio-inline two">
+        <input type="radio" name="optradio2" class="two" value="Yes">Yes
+      </label>
+      <label class="radio-inline two">
+        <input type="radio" name="optradio2" class="two" value="No">No
+      </label>
+		</div>
+	</div>
+	<button id="btn3" type="button" class="btn btn-success two">Next</button>
+	<div class="form-group text-center">
+	  <label for="plugins" class="three">Are plugins installed?</label>
+		<div class="leftal">
+	  <label class="radio-inline three">
+        <input type="radio" name="optradio3" class="three" value="Yes">Yes
+      </label>
+      <label class="radio-inline three">
+        <input type="radio" name="optradio3" class="three" value="No">No
+			</label></div>
+	</div>
+	<button id="btn4" type="button" class="btn btn-success three">Next</button>
+	<div class="form-group text-center">
+	  <label for="googlefb" class="four">Added Google or Fb at sidebar?</label>
+	  <div class="leftal"><label class="radio-inline four">
+        <input type="radio" name="optradio4" class="four" value="Yes">Yes
+      </label>
+      <label class="radio-inline four">
+        <input type="radio" name="optradio4" class="four" value="No">No
+      </label>
+		</div></div>
+	<button id="btn5" type="button" class="btn btn-success four">Next</button>
+	  <div class="form-group text-center">
+	  <label for="Ads" class="five">Are ads added?</label>
+	  <div class="leftal"><label class="radio-inline five">
+        <input type="radio" name="optradio5" class="five" value="Yes">Yes
+      </label>
+      <label class="radio-inline five">
+        <input type="radio" name="optradio5" class="five" value="No">No
+      </label>
+		  </div></div>
+	<button id="btn6" type="button" class="btn btn-success five">Next</button>
+	  <div class="form-group text-center">
+	  <label for="htaccess" class="six">Is htaccess changed?</label>
+	  <div class="leftal"><label class="radio-inline six">
+        <input type="radio" name="optradio6" class="six" value="Yes">Yes
+      </label>
+      <label class="radio-inline six">
+        <input type="radio" name="optradio6" class="six" value="No">No
+      </label>
+		  </div></div>
+	<button id="btn7" type="button" class="btn btn-success six">Next</button>
+	  <div class="form-group text-center">
+	  <label for="metaPages" class="seven">Are meta-pages created?</label>
+	  <div class="leftal"><label class="radio-inline seven">
+        <input type="radio" name="optradio7" class="seven" value="Yes">Yes
+      </label>
+      <label class="radio-inline seven">
+        <input type="radio" name="optradio7" class="seven" value="No">No
+      </label>
+		  </div></div>-->
+	<button id="btn8" type="submit" class="btn btn-success seven">Submit</button>
+	<style>
+	  .radio-inline {
+    	display: inline-block;
+    	width: 100px;
+       }
+	</style>
+	<script>
+		  $(document).ready(function(){
+			  //$(".two").hide();
+			  //$(".one").hide();
+			  //$(".three").hide();
+			  //$(".four").hide();
+			  //$(".five").hide();
+			  //$(".six").hide();
+			  //$(".seven").hide();
+              //$("#btn1").click(function(){
+              	//$("#btn1").hide();
+		      	//$(".one").show(500, "swing");
+              //});
+			  //$("#btn2").click(function(){
+			//	if($('input[name="optradio1"]:checked').val() != 'Yes'){
+					//alert("Domain must have a unique IP.");
+				    //$('input[name="optradio1"]').prop('checked', false);
+	//			}
+	//			else{
+	//				$("#btn2").hide();
+	//	      		$(".two").show(500, "swing");
+	//			}
+      //        });
+		//	  $("#btn3").click(function(){
+		//		if($('input[name="optradio2"]:checked').val() != 'Yes'){//
+		//			alert("Set unique theme.");
+		//		    $('input[name="optradio2"]').prop('checked', false);//
+		//		}
+		//		else{
+		//			$("#btn3").hide();
+		  //    		$(".three").show(500, "swing");
+			//	}
+              //});
+			  //$("#btn4").click(function(){
+				//if($('input[name="optradio3"]:checked').val() != 'Yes'){
+		//			alert("Install plugins before moving forward.");
+		//		    $('input[name="optradio3"]').prop('checked', false);//
+		//		}
+		//		else{
+		//			$("#btn4").hide();
+		  //    		$(".four").show(500, "swing");
+			//	}
+              //});
+			  //$("#btn5").click(function(){
+				//if($('input[name="optradio4"]:checked').val() != 'Yes'){
+				//	alert("Complete this step before moving forward.");//
+			//	    $('input[name="optradio4"]').prop('checked', false);//
+		//		}
+		//		else{
+		//			$("#btn5").hide();
+		  //    		$(".five").show(500, "swing");
+			//	}
+              //});
+			  //$("#btn6").click(function(){
+				//if($('input[name="optradio5"]:checked').val() != 'Yes'){
+				//	alert("Complete this step before moving forward.");//
+			//	    $('input[name="optradio5"]').prop('checked', false);//
+		//		}
+		//		else{
+		//			$("#btn6").hide();
+		  //    		$(".six").show(500, "swing");
+			//	}
+              //});
+			  //$("#btn7").click(function(){
+				//if($('input[name="optradio6"]:checked').val() != 'Yes'){
+				//	alert("Change htaccess before moving forward.");
+				  //  $('input[name="optradio6"]').prop('checked', false);//
+		//		}
+		//		else{
+		//			$("#btn7").hide();
+		  //    		$(".seven").show(500, "swing");
+			//	}
+              //});
+			  $("#btn8").one('click', function(){
+				//if($('input[name="optradio7"]:checked').val() != 'Yes'){
+				//	alert("Create meta pages before moving forward..");
+				  //  $('input[name="optradio7"]').prop('checked', false);
+				//}
+				//else{
+					//$("#btn8").prop("disabled",true);
+					//$("#btn8").hide();
+		      		//$(".two").show(500, "swing");
+				//}
+              });
+			//$('#DomainName').focusout(function checkDN() {
+    	  	  //var text = document.getElementById("DomainName").value;
+    	      //var regexp = /((https?):\/\/)(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+    	  	  //if(!regexp.test(text)){
+			    //alert("Enter a valid Domain Name with http(s)://");
+	          //}
+		    //});
+          });
+	  </script>
+  </form>
+</div>
